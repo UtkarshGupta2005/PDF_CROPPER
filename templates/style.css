@@ -1,0 +1,118 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #aad3ff;
+  margin-top: 4px;
+}
+
+/* ===== Main Content ===== */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.upload-card, .result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.upload-card h2, .result-card h2 {
+  color: #002b5c;
+  margin-bottom: 0.8rem;
+}
+
+.upload-card p, .result-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ===== Form ===== */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.file-input {
+  padding: 0.8rem;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.file-input:hover {
+  border-color: #004aad;
+}
+
+/* ===== Buttons ===== */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+  background-color: #004aad;
+}
+
+.btn-primary:hover {
+  background-color: #003780;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #999;
+  margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: #777;
+  transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #002b5c;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart PDF Cropper</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Smart PDF Cropper</h1>
+  </header>
+
+  <main class="container">
+    <div class="upload-card">
+      <h2>Upload Your PDF</h2>
+      <p>Crop labels, barcodes, or invoice sections quickly and securely.</p>
+
+      <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+        
+        <!-- File input -->
+        <label for="file" class="form-label">Choose PDF File</label>
+        <input type="file" id="file" name="file" accept="application/pdf" required class="file-input">
+
+        <!-- Dropdown for platform -->
+        <label for="platform" class="form-label">Select Platform</label>
+        <select id="platform" name="platform" class="dropdown" required>
+          <option value="" disabled selected>Select a platform</option>
+          <option value="flipkart">Flipkart</option>
+          <option value="myntra">Myntra</option>
+          <option value="ajio">Ajio</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Upload & Crop</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

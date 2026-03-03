@@ -40,7 +40,7 @@ def upload_file():
         # 🔹 Define crop coordinates based on platform
         if platform == 'flipkart':
             # Removes whitespace & keeps only main label
-            crop_rect = fitz.Rect(0, 20, 400, 380)
+            crop_rect = fitz.Rect(90, 17, 410, 382)
 
         elif platform == 'myntra':
             # Slightly wider layout
@@ -94,3 +94,4 @@ def download_file(filename):
 if __name__ == "__main__":
     # Run on local network for multi-device access
     app.run(host='0.0.0.0', port=5000, debug=True)
+

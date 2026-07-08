@@ -4,7 +4,7 @@ A Flask-based web application that automates shipping label processing for major
 
 The application allows users to upload shipping-label PDFs, automatically crop platform-specific regions, extract text from selected labels, and download processed outputs.
 
-It has helped reduce 50% workkload for the leatherkraft brand.
+Efficiently reduced 50% workload
 ---
 
 ## Features
